@@ -14,25 +14,20 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <!-- font awesome cdn file link   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- daisy UI and tailwind cdn file link   -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
 
-    <!-- font awesome cdn file link   -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
     <!-- css file link  -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <style>
-
-
-    </style>
-
 
     <script>
         tailwind.config = {
@@ -49,6 +44,7 @@
     <style>
         body {
             font-family: 'Lato', sans-serif;
+
         }
     </style>
 </head>
@@ -56,60 +52,62 @@
 <body>
 
 
-    <header class="container mx-auto ">
+    <header class="container mx-auto  ">
+        <!----------- -----------------------------------------nav bar section  --------------------------------------------------- -->
 
-        <nav class=" bg-[#f85559] rounded-[100px] py-3 px-8 my-6">
+        <nav class="  lg:bg-[#f85559] rounded-[100px] py-3 lg:px-8 lg:my-6 overflow-x-hidden box-border">
             <div class="navbar flex justify-between">
 
                 <div class=" flex-1 hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a class="text-lg lg:text-white text-black hover:text-white" href="">Home</a></li>
-                        <li><a class="text-lg lg:text-white text-black hover:text-white" href="">About us</a></li>
-                        <li><a class="text-lg lg:text-white text-black hover:text-white" href="">Shop</a></li>
-                        <li><a class="text-lg lg:text-white text-black hover:text-white" href="">All Fruits</a></li>
+                    <ul class="menu menu-horizontal mx-0 flex-nowrap px-0 ">
+                        <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Home</a></li>
+                        <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">About us</a></li>
+                        <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Shop</a></li>
+                        <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">All Fruits</a></li>
                     </ul>
                 </div><!-- nav menu desctop-->
 
                 <div class="flex-1">
                     <figure class="flex gap-2 items-center">
-                        <img src="assets/media/logo.png" alt="">
-                        <h1 class="text-black lg:text-white text-3xl font-bol"> Fruit Burst</h1>
+                        <img class="w-8 md:w-12 " src="assets/media/logo.png" alt="">
+                        <h1 class="text-black lg:text-white md:text-3xl text-xl w-[30px] font-bold whitespace-nowrap">
+                            Fruit Burst</h1>
                     </figure>
                 </div><!-- nav logo -->
 
-                <div class="flex-1 lg:hidden ">
-                    <div class="dropdown">
-                        <label tabindex="0" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </label>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a class="text-lg lg:text-white text-black " href="">Home</a></li>
-                            <li><a class="text-lg lg:text-white text-black" href="">About us</a></li>
-                            <li><a class="text-lg lg:text-white text-black" href="">Shop</a></li>
-                            <li><a class="text-lg lg:text-white text-black" href="">All Fruits</a></li>
-                        </ul>
+                <div class="   lg:hidden">
+                    <div class="navbar-start">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost btn-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 6h16M4 12h16M4 18h7" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>mmmm</a></li>
+                                <li><a>mmm</a></li>
+                                <li><a>mmmm2</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div><!-- nav mobaile menu item -->
 
 
-
-
-
-                <div class=" hidden lg:inline-block  relative   w-[250px]  ">
-                    <input type="text" placeholder="Search"
-                        class="relative rounded-3xl  px-4  w-full input input-bordered    " />
-                    <i class="fa-solid fa-magnifying-glass absolute top-4 right-4 cursor-pointer"></i>
+                <div class=" hidden lg:block  ">
+                    <div class=" relative   w-[250px] ">
+                        <input type="text" placeholder="Search"
+                            class="relative rounded-3xl  px-4  w-full input input-bordered    " />
+                        <i class="fa-solid fa-magnifying-glass absolute top-4 right-4 cursor-pointer"></i>
+                    </div>
                 </div><!-- search bar container-->
 
             </div><!-- nav container -->
         </nav><!-- nav ber end -->
 
-        <!----------- hero slider ---------- -->
+        <!----------- -----------------------------------------hero slider --------------------------------------------------- -->
         <div class="carousel   w-full h-[300px] lg:h-[550px] md:h-[450px] ">
 
             <!---------- slider 1 ----------->
@@ -213,10 +211,6 @@
 
         </div><!-- slider main content-->
 
-
-
-
-
     </header>
 
     <!--- nav  bar end -->
@@ -231,7 +225,47 @@
 
 
 
-
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </label>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a>mmmm</a></li>
+                    <li><a>mmm</a></li>
+                    <li><a>mmmm2</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-end">
+            <button class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+            <button class="btn btn-ghost btn-circle">
+                <div class="indicator">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                    </svg>
+                    <span class="badge badge-xs badge-primary indicator-item"></span>
+                </div>
+            </button>
+        </div>
+    </div>
 
 
     <footer class="bg-black ">
