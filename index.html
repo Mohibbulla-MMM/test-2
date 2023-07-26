@@ -4,79 +4,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Page Title</title>
+    <!-- Add any additional meta tags, CSS or JavaScript links here -->
 
-    <!-- tailwindcss cdn link   -->
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <!-- css file link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+
+
+    </style>
+
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+
+                        'mm-primary-red': '#F85559',
+                        'text-mm-orange': '#FF8938',
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
 
 
-    <nav class="container">
-        <div class="navbar bg-base-100 flex  flex-row  justify-between">
+    <header class="container mx-auto">
 
-            <!-- mobile dropdown menu  -->
-            <div class=" inline-block lg:hidden ">
-                <div class=" dropdown  ">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </label>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li class="my-2 btn"><a>Item 1</a></li>
-                        <li class="my-2 btn"><a>Item 2</a></li>
-                        <li class="my-2 btn"><a>Item 3</a></li>
+        <nav> </nav>
 
-                        <li class=" my-2"> <a class="btn btn-error text-white  py-3">Button</a> </li>
-                    </ul>
-                </div>
+        <!----------- hero slider ---------- -->
 
-            </div>
+        <div class="carousel   w-full h-[300px] lg:h-[550px] md:h-[450px] ">
+            <!---------- slider 1 ----------->
+            <div id="slide1" class="   carousel-item relative w-full mm-slider-1 rounded-md mm-bg-overlay ">
 
-            <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-
-
-            <div class=" hidden lg:flex">
-                <div class=" hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li> <a href="#"> item 2</a></li>
-                        <li><a>Item 3</a></li>
-                    </ul>
-                </div>
-
-
-
-
-
-
-                <!-- contact button  -->
-                <div class=" hidden lg:inline-block">
-                    <a class="btn btn-error text-white px-8  ">Button</a>
+                <div class=" mt-5    h-full w-full flex  align-center justify-center ">
+                    <div>
+                        <h1 class="text-white text-4xl  text-center"> mohibbulla 1</h1>
+                        <p class=" my-5 text-center "> mohibbulla 1 dfdf dfd dfdf dfd dfd fdaffd dsfdsf dsfd dafdfds fsf
+                        </p>
+                        <div class="flex justify-center">
+                            <button class="btn btn-error text-white">
+                                shop now
+                            </button>
+                        </div>
+                    </div><!-- slider inner box -->
+                </div> <!-- slider coantainer   -->
+                <!-- <img src="assets/media/banner1.png" alt=""> -->
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn  btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
                 </div>
             </div>
 
+
+            <!---------- slider 2 ----------->
+            <div id="slide2" class="carousel-item relative w-full">
+                <p> mohibbulla 2 </p>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!---------- slider 3 ----------->
+            <div id="slide3" class="carousel-item relative w-full">
+                <p> mohibbulla 3</p>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <!---------- slider 4 ----------->
+            <div id="slide4" class="carousel-item relative w-full">
+                <p> mohibbulla 4</p>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle  ">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
         </div>
-    </nav>
+
+
+
+
+
+    </header>
+
+    <!--- nav  bar end -->
+
+
+    <main>
+        <p>
+            lorem ipsum is doror leper raj kjdi,
+        </p>
+
+    </main>
 
 
 
 
 
 
+    <footer class="bg-black ">
+
+
+        <div class="container py-5 md:py-10 lg:py-20">
+            <!----- footer logo ----->
+            <div class="flex justify-center">
+                <figure>
+                    <img>
+                    <p class="text-white text-4xl"> logo footer </p>
+                </figure>
+            </div><!--- footer logo --->
+
+            <!----- footer menu ----->
+            <div class="flex gap-3 justify-center flex-wrap">
+                <a class="p-2 " href="#"> home </a>
+                <a class="p-2 " href="#"> home 2 </a>
+                <a class="p-2 " href="#"> home 3</a>
+                <a class="p-2 " href="#"> home 4</a>
+                <a class="p-2 " href="#"> home 5</a>
+                <a class="p-2 " href="#"> home 6</a>
+            </div><!--- footer container -->
+
+            <!----- footer social icon ----->
+            <div class="flex gap-3 justify-center flex-wrap">
+                <a class="p-2 " href="#"> home </a>
+                <a class="p-2 " href="#"> home 2 </a>
+                <a class="p-2 " href="#"> home 3</a>
+                <a class="p-2 " href="#"> home 4</a>
+                <a class="p-2 " href="#"> home 5</a>
+                <a class="p-2 " href="#"> home 6</a>
+            </div> <!--- social container -->
+
+        </div> <!--- footer container--->
 
 
 
 
-
-
-
+    </footer>
 
 
 </body>
