@@ -44,6 +44,8 @@
     <style>
         body {
             font-family: 'Lato', sans-serif;
+            background-color: #fff;
+            color: #000;
 
         }
     </style>
@@ -52,10 +54,10 @@
 <body>
 
 
-    <header class="container mx-auto  md:px-4 ">
+    <header class="container mx-auto  md:px-4 overflow-x-hidden box-border">
         <!----------- -----------------------------------------nav bar section  --------------------------------------------------- -->
 
-        <nav class="  lg:bg-[#f85559] rounded-[100px] py-3 lg:px-8 lg:my-6 overflow-x-hidden box-border">
+        <nav class="  lg:bg-[#f85559] rounded-[100px] py-3 lg:px-8 lg:my-6 ">
             <div class="navbar flex justify-between">
 
                 <div class=" flex-1 hidden lg:flex">
@@ -86,10 +88,13 @@
                                 </svg>
                             </label>
                             <ul tabindex="0"
-                                class="menu menu-sm dropdown-content mt-3 z-[100] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li><a>mmmm</a></li>
-                                <li><a>mmm</a></li>
-                                <li><a>mmmm2</a></li>
+                                class=" absolute right-0 menu menu-sm  dropdown-content mt-3 z-[100] p-2 shadow-md bg-base-100 rounded-box w-52 bg-white text-black">
+                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Home</a></li>
+                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">About us</a>
+                                </li>
+                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Shop</a></li>
+                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">All Fruits</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -99,7 +104,7 @@
                 <div class=" hidden lg:block  ">
                     <div class=" relative   w-[250px] ">
                         <input type="text" placeholder="Search"
-                            class="relative rounded-3xl  px-4  w-full input input-bordered    " />
+                            class="relative rounded-3xl  px-4  w-full input input-bordered  bg-white  " />
                         <i class="fa-solid fa-magnifying-glass absolute top-4 right-4 cursor-pointer"></i>
                     </div>
                 </div><!-- search bar container-->
@@ -108,7 +113,7 @@
         </nav><!-- nav ber end -->
 
         <!----------- -----------------------------------------hero slider --------------------------------------------------- -->
-        <div class="carousel rounded-lg   w-full h-[300px] lg:h-[550px] md:h-[450px] ">
+        <div class="carousel rounded-lg   w-full h-[300px] lg:h-[550px] md:h-[450px] overflow-hidden">
 
             <!---------- slider 1 ----------->
             <div id="slide1" class="   carousel-item relative w-full mm-slider-1 rounded-md  ">
@@ -277,6 +282,7 @@
 
         <!------------------------------------------------- Deal of the day card ----------------------------------------------- -->
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-5 my-5">
+
             <!-- card 1  -->
             <div class=" border-2 border-[rgba(18,18,18,0.2)]  rounded-lg px-4 py-12">
                 <figure class="flex justify-center">
@@ -313,12 +319,12 @@
 
                 <dialog id="my_modal_1" class="modal">
 
-                    <form method="dialog" class="modal-box">
+                    <form method="dialog" class="modal-box bg-white text-white">
                         <figure class="flex justify-center">
                             <img class="inline-block h-24 mx-auto" src="assets/media/fruit6.png" alt="">
                         </figure>
 
-                        <h1 class="text-2xl text-center my-2 font-bold">
+                        <h1 class="text-2xl text-center my-2 font-bold text-black">
                             Apples
                         </h1>
                         <p class=" text-base text-center text-[rgba(18,18,18,0.6)] mx-auto  max-w-[400px]">
@@ -353,8 +359,7 @@
 
                         <div class="modal-action flex justify-center gap-4">
                             <!-- if there is a button in form, it will close the modal -->
-                            <button
-                                class="border border-[#f85559] text-[#f85559] rounded btn bg-white  px-4">Close</button>
+                            <button class="  border-[#f85559] text-[#f85559] rounded btn bg-white  px-4">Close</button>
                             <button class="border border-[#f85559] bg-[#f85559] text-white rounded btn  px-4">
                                 Buy Now
                             </button>
@@ -362,6 +367,7 @@
                     </form>
                 </dialog> <!-- modal one end-->
             </div><!-- card 1  -->
+
 
             <!-- card 2  -->
             <div class=" border-2 border-[rgba(18,18,18,0.2)]  rounded-lg px-4 py-12">
@@ -399,12 +405,12 @@
 
                 <dialog id="my_modal_2" class="modal">
 
-                    <form method="dialog" class="modal-box">
+                    <form method="dialog" class="modal-box bg-white text-black">
                         <figure class="flex justify-center">
                             <img class="inline-block w-24 mx-auto" src="assets/media/fruit7.png" alt="">
                         </figure>
 
-                        <h1 class="text-2xl text-center my-2 font-bold">
+                        <h1 class="text-2xl text-center my-2 font-bold text-black">
                             Orange
                         </h1>
                         <p class=" text-base text-center text-[rgba(18,18,18,0.6)] mx-auto  max-w-[400px]">
@@ -449,6 +455,7 @@
                 </dialog> <!-- modal one end-->
             </div><!-- card 2  -->
 
+
             <!-- card 3  -->
             <div class=" border-2 border-[rgba(18,18,18,0.2)]  rounded-lg px-4 py-12">
                 <figure class="flex justify-center">
@@ -485,12 +492,12 @@
 
                 <dialog id="my_modal_3" class="modal">
 
-                    <form method="dialog" class="modal-box">
+                    <form method="dialog" class="modal-box bg-white text-white">
                         <figure class="flex justify-center">
                             <img class="inline-block w-24 mx-auto" src="assets/media/fruit8.png" alt="">
                         </figure>
 
-                        <h1 class="text-2xl text-center my-2 font-bold">
+                        <h1 class="text-2xl text-center my-2 font-bold text-white">
                             Red Dragon
                         </h1>
                         <p class=" text-base text-center text-[rgba(18,18,18,0.6)] mx-auto  max-w-[400px]">
@@ -571,12 +578,12 @@
 
                 <dialog id="my_modal_4" class="modal">
 
-                    <form method="dialog" class="modal-box">
+                    <form method="dialog" class="modal-box bg-white text-white">
                         <figure class="flex justify-center">
                             <img class="inline-block w-24 mx-auto" src="assets/media/fruit9.png" alt="">
                         </figure>
 
-                        <h1 class="text-2xl text-center my-2 font-bold">
+                        <h1 class="text-2xl text-center my-2 font-bold text-black">
                             Banana
                         </h1>
                         <p class=" text-base text-center text-[rgba(18,18,18,0.6)] mx-auto  max-w-[400px]">
@@ -624,7 +631,7 @@
         </div><!-- section 2 card-->
         <!----------------------- section 2 see all button  --------------------- -->
         <div class="flex justify-center mb-20">
-            <a class=" btn text-white px-6 bg-[#f85559]" href=""> See All</a>
+            <a class=" btn border-0 text-white px-6 bg-[#f85559]" href=""> See All</a>
         </div> <!-- section 2 btn and final end-->
 
 
@@ -683,7 +690,7 @@
                         <img src="assets/media/member4.png" alt="">
                     </figure><!-- card image-->
                     <h1 class="text-2xl text-white font-bold text-center my-3">Chaity </h1>
-                    <p class="text-base text-white  text-center">  Awlad Hossain</p>
+                    <p class="text-base text-white  text-center"> Awlad Hossain</p>
                     <div class="flex gap-4 justify-center mt-3">
                         <figure> <img src="assets/media/facebook 1.svg" alt=""></figure>
                         <figure> <img src="assets/media/twitter (1) 1.svg" alt=""></figure>
@@ -750,53 +757,7 @@
 
     </footer>
 
-    <!-- <div class="flex justify-center">
-        <div class="rating rating-md rating-half">
-            <input type="radio" name="rating-11" class="rating-hidden" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-        </div>
-    </div> 
 
-    <div class="flex justify-center">
-        <div class="rating rating-md rating-half">
-            <input type="radio" name="rating-12" class="rating-hidden" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-        </div>
-    </div> 
-
-    <div class="flex justify-center">
-        <div class="rating rating-md rating-half">
-            <input type="radio" name="rating-13" class="rating-hidden" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
-            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
-        </div>
-    </div>  -->
 
 
 
