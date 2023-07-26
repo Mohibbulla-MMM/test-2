@@ -216,10 +216,163 @@
     <!--- nav  bar end -->
 
 
-    <main>
-        <p>
-            lorem ipsum is doror leper raj kjdi,
-        </p>
+    <main class="container mx-auto">
+        <!------------------------------------------------- section 1 ----------------------------------------------- -->
+        <!------------------------------------------------- Deal of the day title ----------------------------------------------- -->
+        <div class="flex justify-between items-center flex-col lg:flex-row my-5 px-3">
+            <div class="  md:mb-0 mb-4">
+                <h1 class=" lg:text-5xl text-3xl  font-bold text-center lg:text-start">Deal of the day</h1>
+                <p class=" text-base max-w-[450px] text-[rgba(18,18,18,0.6)] text-center lg:text-start mx-auto">Contrary
+                    to popular belief, is not simply
+                    random
+                    text. It has roots in a piece of classical Latin
+                    literature from 45 BC, making it over 2000 years old.
+                </p>
+            </div> <!-- section 2 left part-->
+
+            <div class="flex lg:justify-end justify-center md:gap-5 gap-1">
+
+                <div class=" font-bold">
+                    <div class="flex gap-1 md:gap-4 items-center">
+                        <h1 class="text-3xl lg:text-5xl">29</h1>
+                        <p class="mm-write-mode-tb text-2xl"> ...</p>
+                    </div>
+                    <p class=" text-[rgba(18,18,18,0.6)] text-base   mt-3">
+                        Days
+                    </p>
+                </div> <!--days -->
+
+                <div class=" font-bold">
+                    <div class="flex gap-1 md:gap-4 items-center">
+                        <h1 class="text-3xl lg:text-5xl">15</h1>
+                        <p class="mm-write-mode-tb text-2xl"> ...</p>
+                    </div>
+                    <p class=" text-[rgba(18,18,18,0.6)] text-base  mt-3">
+                        Hours
+                    </p>
+                </div> <!--Hours -->
+
+                <div class=" font-bold">
+                    <div class="flex  gap-1 md:gap-4 items-center">
+                        <h1 class="text-3xl lg:text-5xl">25</h1>
+                        <p class="mm-write-mode-tb text-2xl"> ...</p>
+                    </div>
+                    <p class=" text-[rgba(18,18,18,0.6)] text-base  mt-3">
+                        Minutes
+                    </p>
+                </div> <!--Minutes -->
+
+                <div class=" font-bold">
+                    <div class="flex gap-1 md:gap-4 items-center">
+                        <h1 class="text-3xl lg:text-5xl">8</h1>
+                    </div>
+                    <p class=" text-[rgba(18,18,18,0.6)] text-base  mt-3">
+                        Seconds
+                    </p>
+                </div> <!--Seconds -->
+
+
+
+            </div> <!-- section 2 right part-->
+        </div> <!-- section 2 title end-->
+
+        <!------------------------------------------------- Deal of the day card ----------------------------------------------- -->
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mb-5">
+            <div class=" border-2 border-[rgba(18,18,18,0.2)]  rounded-lg px-4 py-12">
+                <figure class="flex justify-center">
+                    <img class="inline-block w-24 mx-auto" src="assets/media/fruit6.png" alt="">
+                </figure>
+                <h1 class="text-2xl text-center my-6">
+                    12.90$ - 18.85$
+                </h1>
+                <p class=" text-base text-center text-[rgba(18,18,18,0.6)]">
+                    Apples
+                </p>
+                <div class="flex justify-center my-4">
+                    <div class="rating rating-md rating-half">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                            checked />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                    </div>
+                </div><!-- rating-->
+
+
+
+                <!-------------------------------------------- card 1 modal ------------------------------------------ -->
+                <div class="flex justify-center">
+                    <button class=" text-lg text-[#f85559] text-center block "
+                        onclick="my_modal_1.showModal()">Details</button>
+                </div>
+
+                <dialog id="my_modal_1" class="modal">
+
+                    <form method="dialog" class="modal-box">
+                        <figure class="flex justify-center">
+                            <img class="inline-block w-24 mx-auto" src="assets/media/fruit6.png" alt="">
+                        </figure>
+
+                        <h1 class="text-2xl text-center my-2">
+                            Apples
+                        </h1>
+                        <p class=" text-base text-center text-[rgba(18,18,18,0.6)] mx-auto  max-w-[400px]">
+                            Professional employees are there for you to pick the most amazing and fresh fruits.
+                        </p>
+
+                        <div class="flex justify-center my-2">
+                            <div class="rating rating-md rating-half">
+                                <input type="radio" name="rating-10" class="rating-hidden" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10" class="bg-[#f85559] mask mask-star-2 mask-half-1"
+                                    checked />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+                                <input type="radio" name="rating-10"
+                                    class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+                            </div>
+                        </div><!-- rating-->
+
+
+                        <div class="modal-action flex justify-center gap-4">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button
+                                class="border border-[#f85559] text-[#f85559] rounded btn bg-white  px-4">Close</button>
+                            <button class="border border-[#f85559] bg-[#f85559] text-white rounded btn  px-4">
+                                Buy Now
+                            </button>
+                        </div>
+                    </form>
+                </dialog> <!-- modal one end-->
+
+
+
+            </div><!-- card 1  -->
+
+
+
+        </div><!-- section 2 card-->
+
 
     </main>
 
@@ -272,6 +425,53 @@
 
     </footer>
 
+    <div class="flex justify-center">
+        <div class="rating rating-md rating-half">
+            <input type="radio" name="rating-11" class="rating-hidden" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-11" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+        </div>
+    </div><!-- rating-->
+
+    <div class="flex justify-center">
+        <div class="rating rating-md rating-half">
+            <input type="radio" name="rating-12" class="rating-hidden" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-12" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+        </div>
+    </div><!-- rating-->
+
+    <div class="flex justify-center">
+        <div class="rating rating-md rating-half">
+            <input type="radio" name="rating-13" class="rating-hidden" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" checked />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-1" />
+            <input type="radio" name="rating-13" class="bg-[#f85559] mask mask-star-2 mask-half-2" />
+        </div>
+    </div><!-- rating-->
 
 </body>
 
