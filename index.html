@@ -81,19 +81,24 @@
                     <div class="navbar-start">
                         <div class="dropdown">
                             <label tabindex="0" class="btn btn-ghost btn-circle">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    class="inline-block w-5 h-5 stroke-current">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 6h16M4 12h16M4 18h7" />
+                                        d="M4 6h16M4 12h16M4 18h16"></path>
                                 </svg>
                             </label>
+
                             <ul tabindex="0"
-                                class=" absolute right-0 menu menu-sm  dropdown-content mt-3 z-[100] p-2 shadow-md bg-base-100 rounded-box w-52 bg-white text-black">
-                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Home</a></li>
-                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">About us</a>
+                                class=" absolute right-0 menu menu-sm  dropdown-content mt-3 z-[100] p-2 shadow-lg shadow-slate-600 bg-base-100 rounded-box w-52 bg-white text-black">
+                                <li><a class=" text-md  text-black hover:text-[#F85559]" href="">Home</a>
                                 </li>
-                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">Shop</a></li>
-                                <li><a class=" text-lg lg:text-white text-black hover:text-white" href="">All Fruits</a>
+                                <li><a class=" text-md  text-black hover:text-[#F85559]" href="">About
+                                        us</a>
+                                </li>
+                                <li><a class=" text-md  text-black hover:text-[#F85559]" href="">Shop</a>
+                                </li>
+                                <li><a class=" text-md  text-black hover:text-[#F85559]" href="">All
+                                        Fruits</a>
                                 </li>
                             </ul>
                         </div>
@@ -128,7 +133,7 @@
                             We supply highly quality organic products
                         </p>
                         <div class="flex justify-center">
-                            <button class="btn btn-error text-white">
+                            <button class="btn border-0 bg-[#F85559] text-white">
                                 shop now
                             </button>
                         </div>
@@ -219,9 +224,9 @@
 
 
         <!-- banner under optional section  -->
-        <div class="px-24 hidden lg:block">
-            <div class="relative top-[-100px]  bg-white rounded-lg shadow-lg shadow-gray-100">
-                <div class="flex p-10">
+        <div class="px-24 hidden lg:block relative h-40">
+            <div class="  relative top-[-50%]  bg-white rounded-lg shadow-lg shadow-gray-200 w-full">
+                <div class=" flex justify-center items-center gap-2 p-10">
 
                     <div class="flex-1">
                         <figure class="flex justify-center">
@@ -763,113 +768,125 @@
                 literature from 45 BC, making it over 2000 years old.
             </p>
         </div><!-- title-->
-        <div class="flex  flex-col lg:flex-row lg:items-end">
+
+        <div class=" xl:hidden  px-10 flex justify-center py-5">
+            <figure>
+                <img class="rounded-lg inline-block   " src="assets/media/whychoose1.png" alt="">
+            </figure>
+        </div>
+
+        <div class="flex  flex-col md:flex-row lg:items-end">
             <!--------------------------------------------- col 1------------------------------------------- -->
 
-            <div class=" flex-1 flex flex-col gap-6 mt-6 ">
+            <div class=" flex-1 flex flex-col  gap-7 mt-6  ">
                 <div
-                    class=" flex flex-col lg:flex-row gap-3 lg:justify-start lg:items-start items-center justify-center">
+                    class=" flex flex-col md:flex-row gap-3 md:justify-start md:items-start  items-center justify-center">
                     <figure>
                         <img class=" min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon1.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-start items-center">
+                        <div class=" flex flex-col md:items-start items-center">
                             <h1 class="text-black text-2xl font-bold"> Dedicated Team</h1>
                             <p class="w-28 h-[1px] bg-slate-400 my-2 "></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-left max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-left max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
 
+
                 <div
-                    class=" flex flex-col lg:flex-row gap-3 lg:justify-start lg:items-start items-center justify-center">
+                    class=" flex flex-col md:flex-row gap-3 md:justify-start md:items-start  items-center justify-center">
                     <figure>
                         <img class="min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon2.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-start items-center">
+                        <div class=" flex flex-col md:items-start items-center">
                             <h1 class="text-black text-2xl font-bold"> Fresh is Best</h1>
-                            <p class="w-28 h-[1px] bg-slate-400 my-2"></p>
+                            <p class="w-28 h-[1px] bg-slate-400 my-2 "></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-left max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-left max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
 
+
                 <div
-                    class=" flex flex-col lg:flex-row gap-3 lg:justify-start lg:items-start items-center justify-center">
+                    class=" flex flex-col md:flex-row gap-3 md:justify-start md:items-start  items-center justify-center">
                     <figure>
                         <img class="min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon3.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-start items-center">
+                        <div class=" flex flex-col md:items-start items-center">
                             <h1 class="text-black text-2xl font-bold"> Gift Certificates</h1>
-                            <p class="w-28 h-[1px] bg-slate-400 my-2"></p>
+                            <p class="w-28 h-[1px] bg-slate-400 my-2 "></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-left max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-left max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
-
 
             </div><!-- section 4 content box-->
 
             <!--------------------------------------------- col 2 ------------------------------------------- -->
-            <div class="flex-1 hidden lg:block px-10">
-                <figure> <img class="rounded-lg" src="assets/media/whychoose1.png" alt=""></figure>
+            <div class="flex-1 hidden xl:flex    px-10   justify-center">
+                <figure> <img class="rounded-lg max-w-[500px]" src="assets/media/whychoose1.png" alt=""></figure>
             </div>
 
             <!--------------------------------------------- col 3 ------------------------------------------- -->
-            <div class=" flex-1 flex flex-col gap-6 ">
+            <div class=" flex-1 flex  flex-col  gap-7 mt-6 ">
 
-                <div class=" flex lg:flex-row-reverse flex-col items-center lg:justify-start gap-3 ">
+                <div class=" flex md:flex-row-reverse flex-col md:items-start items-center md:justify-start gap-3 ">
                     <figure>
                         <img class="min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon4.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-end items-center">
+                        <div class=" flex flex-col md:items-end items-center">
                             <h1 class="text-black text-2xl font-bold"> Integrated Supplier</h1>
                             <p class="w-28 h-[1px] bg-slate-400 my-2"></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-end max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-end max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
 
-                <div class=" flex lg:flex-row-reverse flex-col items-center lg:justify-start gap-3 ">
+                <div class=" flex md:flex-row-reverse flex-col md:items-start items-center md:justify-start gap-3 ">
                     <figure>
                         <img class="min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon5.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-end items-center">
-                            <h1 class="text-black text-2xl font-bold"> Sustainable Practice</h1>
+                        <div class=" flex flex-col md:items-end items-center">
+                            <h1 class="text-black text-2xl font-bold"> Integrated Supplier</h1>
                             <p class="w-28 h-[1px] bg-slate-400 my-2"></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-end max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-end max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
 
-                <div class=" flex lg:flex-row-reverse flex-col items-center lg:justify-start gap-3 ">
+                <div class=" flex md:flex-row-reverse flex-col md:items-start items-center md:justify-start gap-3 ">
                     <figure>
                         <img class="min-w-[60px] p-4 bg-slate-300 rounded-full" src="assets/media/icon6.png" alt="">
                     </figure>
                     <div>
-                        <div class=" flex flex-col lg:items-end items-center">
-                            <h1 class="text-black text-2xl font-bold"> The Benefits Only</h1>
+                        <div class=" flex flex-col md:items-end items-center">
+                            <h1 class="text-black text-2xl font-bold"> Integrated Supplier</h1>
                             <p class="w-28 h-[1px] bg-slate-400 my-2"></p>
                         </div>
-                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center lg:text-end max-w-[350px]">
+                        <p class=" text-base   text-[rgba(18,18,18,0.6)] text-center md:text-end max-w-[350px]">
                             Professional employees are there for you to pick the most amazing and fresh fruits.
                         </p>
                     </div>
                 </div> <!--  section 4 icon box 1-->
+
+
+
+
 
 
             </div><!-- section 4 content box-->
@@ -893,7 +910,7 @@
     <!-- --------------------------------------------------- footer section  ---------------------------------------------------  -->
     <footer class="bg-black mt-20 ">
 
-        <div class=" container mx-auto  py-5 md:py-10 lg:py-28">
+        <div class=" container mx-auto  lg:py-28  py-20  ">
 
             <!----- ----------------------------footer logo --------------------------------->
             <div class="flex flex-nowrap justify-center gap-2 items-center  ">
@@ -913,7 +930,7 @@
             </div><!--- footer container -->
 
             <!----------------------------------- footer social icon ----------------------------------->
-            <div class="flex gap-2 justify-center flex-wrap">
+            <div class="flex gap-2 justify-center items-center flex-wrap">
                 <a class="p-2 " href="#"> <img class="inline-block w-6 md:w-10" src="assets/media/Group 47.svg" alt="">
                 </a>
                 <a class="p-2 " href="#"> <img class="inline-block w-6 md:w-10" src="assets/media/Group 48.svg" alt="">
